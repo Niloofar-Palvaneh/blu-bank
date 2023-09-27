@@ -1,0 +1,140 @@
+.maincontainer {
+    position: absolute;
+    width: 270px;
+    height: 380px;
+    background: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.thecard {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+}
+
+.thecard:hover {
+    transform: rotateY(180deg);
+}
+
+.thefront {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #fdba74;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.theback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #fdba74;
+    color: #333;
+    text-align: left;
+    display: flex;
+    transform: rotateY(180deg);
+}
+.thebackInfo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    padding-left: 20px;
+
+}
+
+
+.thefront h1 {
+    font-family: 'zilla slab', sans-serif;
+    padding: 30px;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    color: #c05d00;
+}
+
+.theback h1 {
+    font-family: 'zilla slab', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.theback p {
+    font-family: 'zilla slab', sans-serif;
+    font-weight: normal;
+    text-align: center;
+}
+
+.thefront p {
+    font-family: 'zilla slab', sans-serif;
+    padding: 30px;
+    font-weight: normal;
+    text-align: center;
+    color: #c05d00;
+    font-size: 18px;
+}
+
+.phone-cant {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.front-phone {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+
+}
+
+.line-black {
+    background-color: #d86800;
+    width: 30px;
+    height: 100%;
+    margin-left: 15px;
+}
+
+.card-number {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: start;
+    width: 100%;
+}
+.card-info-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.card-info{
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
